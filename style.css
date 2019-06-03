@@ -60,16 +60,24 @@ background-color: transparent;
 	}
 .jumbotron .display-4 {
 font-size: 4rem;
-text-shadow:2px 2px grey;
+text-shadow:2px 2px #FCD133;
 border:2px 2px #FCD133;
-padding-right: : 20px;
+padding-right: 20px;
 
 }
 
 .jumbotron .lead {
 font-size: 1.5rem
 border:2px 2px #FCD133;
+text-shadow:2px 2px #FCD133;
+font-weight: bold;
 
+}
+
+.jumbotron .my-4 {
+
+	width: 400px;
+	margin:0px;
 }
 
 
