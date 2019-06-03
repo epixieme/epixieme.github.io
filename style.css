@@ -16,13 +16,13 @@ body {
 
 h1{
 
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Righteous', cursive;
 
 }
 
 p {
 
-	font-family: 'Rubik', sans-serif
+	font-family: 'Righteous', cursive;
 }
 
 
@@ -70,7 +70,7 @@ padding-right: 20px;
 font-size: 1.5rem
 border:2px 2px #FCD133;
 text-shadow:2px 2px #FCD133;
-font-weight: bold;
+
 
 }
 
