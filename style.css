@@ -1,0 +1,78 @@
+body,
+html {
+
+height: 100%;
+width: 100%;
+background: url(LandingStock_image_28.jpg) no-repeat center center fixed; 
+background-size: cover;
+overflow: hidden;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+h1{
+
+	font-family: 'Rubik', sans-serif;
+
+}
+
+p {
+
+	font-family: 'Rubik', sans-serif
+}
+
+
+.btn-primary {
+background-color: black;
+color: #FCD133;
+border:  2px #FCD133;
+transition: transform 0.2s;
+font-size: 1em;
+font-weight: bolder;
+}
+
+.btn-primary:hover {
+background-color: black;
+opacity: 0.5;
+color: #FCD133;
+border: black;
+cursor:pointer;
+transform: scale(1.1);
+
+
+}
+
+.container {
+margin-right:100%;
+width:100%;
+display:flex;
+flex-wrap: wrap;
+
+}
+
+
+.jumbotron{
+background-color: transparent;
+	}
+.jumbotron .display-4 {
+font-size: 4rem;
+text-shadow:2px 2px grey;
+border:2px 2px #FCD133;
+padding-right: : 20px;
+
+}
+
+.jumbotron .lead {
+font-size: 1.5rem
+border:2px 2px #FCD133;
+
+}
+
+
+
+
+
