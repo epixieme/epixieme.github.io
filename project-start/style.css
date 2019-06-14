@@ -1,0 +1,245 @@
+body{
+    margin:auto 0;
+
+    background-color: rgba(189,195,199,1);
+  /* background: url(marsrover.jpg). no-repeat center center fixed; 
+ size: cover;*/
+  
+    }
+
+/**/
+
+
+
+
+
+
+/*
+Navigation bar*/
+
+.navbar{
+ /* Old browsers */
+ display: flex;
+justify-content: space-between;
+padding:5px 0px 5px 0px;
+background-color: #8A392A;
+box-shadow: 2px 2px 15px 4px grey;
+/*border-bottom: 2px solid #1A0402;*/
+
+}
+
+.main-nav .btn {
+
+border-radius: 6px;
+background-color:rgba(189,195,199,0.8);
+color: #8A392A;
+padding: 2px;
+margin: 0px;
+width: 70px;
+font-size: 1em
+font-family: 'Fira Sans', sans-serif;
+}
+
+/*items within .navbar container*/
+.main-nav{
+align-items: center;
+
+display:flex;
+/*justify-content: flex-start;*/
+margin:0; /*gets rid of white space around the items*/
+/*flex-direction:row;*/
+  /*This aligns items to the end line on main-axis */
+/*justify-content: center;*/
+/*padding:0px 20px 0px 20px;*/
+}
+
+.main-nav > li {
+justify-content: flex-start;
+margin:0;
+padding:0px 20px 0px 20px;
+list-style: none;
+font-family: 'Fira Sans', sans-serif;
+}
+
+
+.main-nav li a{
+color: white;
+text-decoration: none;
+font-size:1em;
+text-shadow: 1px black;
+padding:2px 20px 2px 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+
+.airmarslogo{
+display: inline-block
+padding:0px 20px 0px 20px;
+margin-left: 40px;
+
+}
+
+
+
+.sticky {
+
+    position: fixed;
+    top:0;
+    width: 100%
+}
+
+
+
+@media all and (max-width: 600px) {    
+    .main-nav {    
+        flex-wrap: wrap; 
+        flex-direction: column;
+        }    
+    .main-nav > li {    flex-basis: 50%;  
+
+    }
+
+}
+
+@media all and (max-width: 400px) {  
+    .main-nav {    
+        flex-wrap: wrap; 
+        flex-direction: column;
+        }    
+    .main-nav > li {    
+        flex-basis: 100%; 
+
+    }
+
+    }
+
+/*@media only screen and (max-width: 800px){
+look up media queries on css tricks - used for display issues eg text on page wehn reducing screen sizes, 
+in this example we reduce the font size and padding as it gets smaller to fit on page
+.main-nav{
+   font-size: 0.5em; 
+    padding:0;
+}*/
+
+/*}*/
+
+
+/*.push{
+    display: flex;
+justify-content: space-between;*/
+   /* margin-left: auto; */
+    /*pushes items to the far right of the nav*/
+
+
+
+/*COVER - underneath navigation bar*/
+
+.container2 {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+background: url("marslandscape.jpg") no-repeat;
+background-size:cover;
+height:70vh;
+   
+   }
+  
+/*viewport height - will always be 50% of the view area*/
+
+@media all and (max-width: 600px) {    
+    .container2 {    
+        
+        flex-basis: 50% 
+        }    
+    }
+    
+    @media all and (max-width: 400px) {    
+    .container2 {    
+        
+        flex-basis: 50% 
+        }    
+    }
+
+.booking{
+
+    display: flex;
+
+}
+
+/*project grid*/
+
+.grid-wrapper{
+display: grid;
+grid-gap: 0px;
+background-color: rgba(189,195,199,0.8);
+border-radius:120px;
+grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+
+
+.zone {
+   /* padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+ /*   border-radius:10px;*/
+   /* border:1px solid #bbb;*/
+    transition: all 0.3s linear;
+    background-color:rgba(189,195,199,1);
+     
+}
+.box{
+
+    background-color:rgba(189,195,199,1);
+    padding:0px;
+    margin: 20px;
+     box-shadow: 10px solid black;
+
+
+
+}
+
+.zone > .box:hover {
+
+ -webkit-transform: rotate(0.5turn);
+-moz-transform: rotate(0.5turn);
+-o-transform: rotate(0.5turn);
+transform: rotate(0.5turn);
+
+}
+
+.box > img{
+display: flex;
+height: 30vh;
+/*width: 100%;*/
+cursor:pointer;
+    /*display:inline-block;*/
+   
+    font-size:2em;
+    border-radius:120px;
+
+   /* border:1px solid #bbb;*/
+    transition: all 0.3s linear;
+    margin:0;
+    position: relative;
+z-index: 10;
+    box-shadow: 3px 3px grey;
+
+}
+
+footer{
+
+    text-align: center;
+}
+
+
+
+/*booking form */
+
+   
+
+
+
+
+
