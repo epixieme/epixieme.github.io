@@ -43,7 +43,7 @@ font-family: 'Fira Sans', sans-serif;
 /*items within .navbar container*/
 .main-nav{
 align-items: center;
-
+padding-left: 0px;
 display:flex;
 /*justify-content: flex-start;*/
 margin:0; /*gets rid of white space around the items*/
@@ -54,16 +54,9 @@ margin:0; /*gets rid of white space around the items*/
 }
 .main-nav2{
 align-items: center;
-
-
 display:flex;
-
-/*justify-content: flex-start;*/
 margin-left:auto; /*gets rid of white space around the items*/
-/*flex-direction:row;*/
-  /*This aligns items to the end line on main-axis */
-/*justify-content: center;*/
-/*padding:0px 20px 0px 20px;*/
+
 }
 
 
@@ -74,6 +67,9 @@ padding:0px 20px 0px 20px;
 list-style: none;
 font-family: 'Fira Sans', sans-serif;
 }
+
+
+
 
 
 
@@ -108,7 +104,7 @@ font-family: 'Fira Sans', sans-serif;
 
 /*display: inline-block;*/
 padding:0px 0px 0px 0px;
-margin-left: 40px;
+margin-left: 0px;
 margin-bottom: 0px;
 }
 
