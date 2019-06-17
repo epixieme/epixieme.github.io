@@ -20,25 +20,21 @@
 
   <!-- ******nav bar***** -->
 	<nav class="navbar sticky">
-<!-- <div class="marsimage"> -->
+<div>
 
-<!--  <img src="airmars.png" class="airmarslogo" height="29"> -->
+ <img src="airmars.png" class="airmarslogo">
 
-<!-- </div> -->
+</div>
   	<ul class="main-nav" >
   		<!-- <li><img class="logo"src="projectm.png" height="150px" width="150px"></li> -->
     
-		  <li><img src="airmars.png" class="airmarslogo" height="29"> </li>
+		  <li><a href="">About</a></li>
   		<li><a href="">Book</a></li>
       <li><a href="">My Booking</a></li>
-      
+      <li><a href="">Register</a></li>
+  		<li><a href="">Help</a></li>
       <li> <input type="Check In" value="Check In" class="btn"></li>
   	</ul>
-    <ul class="main-nav2"> 
-      <li><a href="">Register</a></li>
-      <li><a href="">Help</a></li>
-      <li><a href="">About</a></li>
-      </ul>
   </nav>
 
 
@@ -48,43 +44,67 @@
   <!-- 	!-- <img class="cover" src="marsrover.jpg"> -->
 
    <div class="row">
-     
-     <!-- ul class="book">
-       <li><h3>Book</h3></li>
-       </ul> -->
   <div class="col-75">
-    <div class="title">
-      <ul class="formheaders">
-      <li class="flights">Flights</li>
-       <li class="colony">Colony packages</li>
-       <li class="marspods">Life Pods</li>
-
-    </ul>
-    </div>
- 
     <div class="container">
-       
       <form action="/action_page.php">
 
         <div class="row">
-         
           <div class="col-50">
-            
-           <div class="destination"></dir> <label for="fname"><i class="fa fa-user"></i> </label>
-            <input type="text" id="fname" name="firstname" placeholder="From: e.g.London"><hr>
-            <label for="email"><i class="fa fa-envelope"></i></label>
-            <input type="text" id="email" name="email" placeholder="To: Mars Sector 1">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
           </div>
-         <div class="depart">
-            <label for="adress"><i class="fa fa-address-card-o">
-              <input type="text" id="fname" name="firstname" placeholder="Departing"><hr>
-            <label for="email"><i class="fa fa-envelope"></i></label>
-            <input type="text" id="email" name="email" placeholder="Returning"></div> 
-            <label for="adress"><i class="fa fa-address-card-o">
-               </div> 
-             </div>
-        
-        <input type="submit" value="Show Flights" class="btn">
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
       </form>
     </div>
   </div>
@@ -93,80 +113,17 @@
   </div>
 </div> 
 
-
-  <div class="zone blue grid-wrapper">
-  	<div class="box zone">
-
-      <img class="floatleft" src="marsrover.jpg"> 
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
-
-    <div class="box zone"><img src="marsvehicle.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div>
-
-
-      <div class="box zone"><img src="redplanet.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div>
+  <div class="zone blue grid-wrapper">
+  	<div class="box zone"><img src="marsrover.jpg"></div>
   <!-- 	<div class="box zone"><img src="img/desktop_analytics_2.png"></div> -->
   	
   
   	
   </div>
   
-  <footer class="zone yellow">
-
-    <ul><h6>About Air Mars</h6><hr>
-      <li>About</li>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
-      <li>Cookie Policy</li>
-      <li>Disclaimer</li>
-
-
-    </ul>
-
-     <ul><h6>Contact Us</h6><hr>
-      <li>About</li>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
-      <li>Cookie Policy</li>
-      <li>Disclaimer</li>
-
-
-    </ul>
-
-
-
-
-    </ul>
-
-     <ul><h6>Members</h6><hr>
-      <li>About</li>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
-      <li>Cookie Policy</li>
-      <li>Disclaimer</li>
-
-
-    </ul>
-
-
-  </footer>
+  <footer class="zone yellow">Footer</footer>
   
 
 </body>

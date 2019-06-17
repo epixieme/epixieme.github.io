@@ -4,7 +4,7 @@ body{
     background-color: rgba(189,195,199,1);
   /* background: url(marsrover.jpg). no-repeat center center fixed; 
  size: cover;*/
-  font-family: 'Fira Sans', sans-serif;
+  
     }
 
 /**/
@@ -20,9 +20,9 @@ Navigation bar*/
 .navbar{
  /* Old browsers */
  display: flex;
-/*justify-content: space-between;*/
-padding:0px 0px 0px 0px;
-/*background-color: #8A392A;*/
+justify-content: space-between;
+padding:5px 0px 5px 0px;
+background-color: #8A392A;
 box-shadow: 2px 2px 15px 4px grey;
 /*border-bottom: 2px solid #1A0402;*/
 
@@ -52,30 +52,14 @@ margin:0; /*gets rid of white space around the items*/
 /*justify-content: center;*/
 /*padding:0px 20px 0px 20px;*/
 }
-.main-nav2{
-align-items: center;
-
-
-display:flex;
-
-/*justify-content: flex-start;*/
-margin-left:auto; /*gets rid of white space around the items*/
-/*flex-direction:row;*/
-  /*This aligns items to the end line on main-axis */
-/*justify-content: center;*/
-/*padding:0px 20px 0px 20px;*/
-}
-
 
 .main-nav > li {
-/*justify-content: flex-start;*/
+justify-content: flex-start;
 margin:0;
 padding:0px 20px 0px 20px;
 list-style: none;
 font-family: 'Fira Sans', sans-serif;
 }
-
-
 
 
 .main-nav li a{
@@ -83,33 +67,15 @@ color: white;
 text-decoration: none;
 font-size:1em;
 text-shadow: 1px black;
-padding:0px 20px 0px 20px;
+padding:2px 20px 2px 20px;
 font-family: 'Fira Sans', sans-serif;
 }
-
-.main-nav2 > li {
-justify-content: flex-end;
-margin:0;
-padding:0px 20px 0px 20px;
-list-style: none;
-font-family: 'Fira Sans', sans-serif;
-}
-.main-nav2 li a{
-color: white;
-text-decoration: none;
-font-size:1em;
-text-shadow: 1px black;
-padding:0px 20px 0px 20px;
-font-family: 'Fira Sans', sans-serif;
-}
-
 
 .airmarslogo{
-
-/*display: inline-block;*/
-padding:0px 0px 0px 0px;
+display: inline-block
+padding:0px 20px 0px 20px;
 margin-left: 40px;
-margin-bottom: 0px;
+
 }
 
 
@@ -180,24 +146,13 @@ height:70vh;
 /*viewport height - will always be 50% of the view area*/
 
 @media all and (max-width: 600px) {    
-    .main-nav{
-flex-direction: column;
-        flex-basis: 80%;
-    }
-
     .container2 {    
         
-        flex-basis: 100%;
+        flex-basis: 50% 
         }    
     }
     
     @media all and (max-width: 400px) {    
-     .main-nav{
-flex-direction: column;
-        flex-basis: 50%;
-    }
-
-
     .container2 {    
         
         flex-basis: 50% 
@@ -214,9 +169,9 @@ flex-direction: column;
 
 .grid-wrapper{
 display: grid;
-grid-gap: 5em;
-background-color:#2E404E;
-/*border-radius:120px;*/
+grid-gap: 0px;
+background-color: rgba(189,195,199,0.8);
+border-radius:120px;
 grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
 }
 
@@ -231,16 +186,15 @@ grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
  /*   border-radius:10px;*/
    /* border:1px solid #bbb;*/
     transition: all 0.3s linear;
-    
+    background-color:rgba(189,195,199,1);
      
 }
 .box{
 
-    background-color:#2E404E;
+    background-color:rgba(189,195,199,1);
     padding:0px;
     margin: 20px;
      box-shadow: 10px solid black;
-
 
 
 
@@ -248,10 +202,10 @@ grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
 
 .zone > .box:hover {
 
- -webkit-transform: scale(1.1);
--moz-transform: scale(1.1);
--o-transform: scale(1.1);
-transform: scale(1.1);
+ -webkit-transform: rotate(0.5turn);
+-moz-transform: rotate(0.5turn);
+-o-transform: rotate(0.5turn);
+transform: rotate(0.5turn);
 
 }
 
@@ -260,10 +214,9 @@ display: flex;
 height: 30vh;
 /*width: 100%;*/
 cursor:pointer;
-
-/*    display:inline-block;*/
+    /*display:inline-block;*/
    
-    font-size:1em;
+    font-size:2em;
     border-radius:120px;
 
    /* border:1px solid #bbb;*/
@@ -271,33 +224,14 @@ cursor:pointer;
     margin:0;
     position: relative;
 z-index: 10;
-    box-shadow: 1px 1px grey;
+    box-shadow: 3px 3px grey;
 
 }
+
 footer{
-display: flex;
-    background-color: #8A392A;
-    z-index: 10
+
+    text-align: center;
 }
-
-footer li{
-
-    text-align: left;
-   list-style: none;
-   font-size: 14px;
-}
-
-p{ 
-
-font-size: 14px; }
-
- /*.floatleft {
-        float: center;
-        padding-right: 0px;
-        padding-bottom: 1px;
-    }
-*/
-
 
 
 
