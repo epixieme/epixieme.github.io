@@ -3,15 +3,16 @@
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin-right: 30px;
-  align-self: center;
+/*  margin-right: 30px;*/
+
 
 }
-/*
+
 .col-25 {
   -ms-flex: 25%;  IE10 
   flex: 25%;
-}*/
+  background-color: rgba(189,195,199,1);
+}
 
 .col-50 {
   -ms-flex: 50%;  /*IE10 */
@@ -33,72 +34,168 @@ h3{
 .col-25,
 .col-50,
 .col-75 {
- /* padding: 0 16px;*/ }
+ /* padding: 0 16px;*/
+  }
+.book{
+/*display: flex;*/
+list-style: none;
+ display: flex;
 
+margin-top: 20px;
+margin-left: 200px;
+}
 
 .container {
-
+display: flex;
   background-color: rgba(189,195,199,0.8);
-  padding: 0px 0px 0px 30px;
+  padding: 10px 10px;
   border: 1px solid lightgrey;
-  border-radius: 10px;
-  margin-top: 50px;
-  margin-right: 1000px;
+  border-radius: 0px 10px;
+  margin-top: 0px;
+  margin-left: auto;
+  width: 80%;
+
+
   /*alignment-baseline: central;*/
 
 }
 
+
+
+.formheaders{
+
+	display: flex;
+
+	padding: 5px;
+	margin:-3px;
+	height: 13%;
+}
+
+
+.formheaders li{
+list-style: none;
+	justify-content: flex-end;
+
+	align-items: flex-end;
+	 background-color: rgba(189,195,199,1);
+	 width:40px;
+	 padding:10px;
+	/*padding-bottom: 10px;*/
+    /* margin-left: 15px;*/
+
+	 margin-bottom: 0px;
+	 border-radius: 10px 0px;
+	 font-size: 0.7em;
+}
+
+.formheaders .flights{
+
+margin-left: 15px;
+background-color: rgba(189,195,199,0.8);
+}
+
+
+
+.formheaders .colony {
+
+	margin-left: 1px;
+	background-color: rgba(255,97,49,0.8);	
+}
+
+.formheaders .marspods {
+
+	margin-left: 1px;
+	background-color: rgba(255,97,49,0.8);
+}
+
+
 input[type=text] {
 display: flex;
-  width: 30%;
+  width: 50%;
   alignment-baseline: central;
   margin-bottom: 20px;
-  padding: 0px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+   padding-left: 20px;
+  border: 0px solid #ccc;
+  border-radius: 10px;
   justify-content: center;
+  background-color: rgba(189,195,199,0.8);
+
  /* margin-left: 20%%;*/
 
 }
 
+.destination{
+
+	border:1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	margin:0;
+	background-color: rgba(189,195,199,0.8);
+}
+
+.depart{
+
+	border:1px solid grey;
+	border-radius: 10px;
+	background-color: rgba(189,195,199,0.8);
+	margin:0;
+}
+
+
+hr{
+	width: 50%;
+	color:rgba(189,195,199,1);
+}
+
 label {
 
-  margin-bottom: 10px;
-  display: flex;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .icon-container {
-  margin-bottom: 20px;
+/*  margin-bottom: 20px;*/
   padding: 0px 0px;
   font-size: 20px;
 }
 
 .btn {
-	display: flex;
-  background-color: #4CAF50;
+	/*display: flex;*/
+  background-color: rgba(255,97,49,0.8);
   color: white;
-  padding: 12px;
-  margin: 10px 0;
+  padding:5px 5px 5px 0px;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right: auto;
   border: none;
-  width: 70%;
-  border-radius: 3px;
+  width: 100%;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 17px;
+  text-align: center;
+
 
 }
 
 .btn:hover {
   background-color: #45a049;
+
+
+ -webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+
 }
 
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
   }
   .col-25 {
     margin-bottom: 20px;
   }
-}
+}*/
