@@ -34,7 +34,8 @@ h3{
 .col-25,
 .col-50,
 .col-75 {
- /* padding: 0 16px;*/ }
+ /* padding: 0 16px;*/
+  }
 .book{
 /*display: flex;*/
 list-style: none;
@@ -46,8 +47,8 @@ margin-left: 200px;
 
 .container {
 display: flex;
-  background-color: rgba(189,195,199,1);
-  padding: 5px 5px;
+  background-color: rgba(189,195,199,0.8);
+  padding: 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 0px 10px;
   margin-top: 0px;
@@ -59,27 +60,55 @@ display: flex;
 
 }
 
-.title {
+
+
+.formheaders{
 
 	display: flex;
-	flex-direction: column;
+
 	padding: 5px;
-	margin:0;
+	margin:-3px;
 	height: 13%;
 }
 
 
-.title p{
+.formheaders li{
+list-style: none;
+	justify-content: flex-end;
 
-	justify-content:  flex-end;
+	align-items: flex-end;
 	 background-color: rgba(189,195,199,1);
 	 width:40px;
-	 padding:5px;
+	 padding:10px;
 	/*padding-bottom: 10px;*/
-     margin-left: 15px;
+    /* margin-left: 15px;*/
+
 	 margin-bottom: 0px;
 	 border-radius: 10px 0px;
+	 font-size: 0.7em;
 }
+
+.formheaders .flights{
+
+margin-left: 15px;
+background-color: rgba(189,195,199,0.8);
+}
+
+
+
+.formheaders .colony {
+
+	margin-left: 1px;
+	background-color: rgba(255,97,49,0.8);	
+}
+
+.formheaders .marspods {
+
+	margin-left: 1px;
+	background-color: rgba(255,97,49,0.8);
+}
+
+
 input[type=text] {
 display: flex;
   width: 50%;
@@ -89,7 +118,7 @@ display: flex;
   border: 0px solid #ccc;
   border-radius: 10px;
   justify-content: center;
-  background-color: rgba(189,195,199,1);
+  background-color: rgba(189,195,199,0.8);
 
  /* margin-left: 20%%;*/
 
@@ -97,18 +126,18 @@ display: flex;
 
 .destination{
 
-	border:1px solid black;
+	border:1px solid grey;
 	border-radius: 10px;
 	background-color: white;
 	margin:0;
-	background-color: rgba(189,195,199,1);
+	background-color: rgba(189,195,199,0.8);
 }
 
 .depart{
 
-	border:1px solid black;
+	border:1px solid grey;
 	border-radius: 10px;
-	background-color: rgba(189,195,199,1);
+	background-color: rgba(189,195,199,0.8);
 	margin:0;
 }
 
@@ -132,9 +161,10 @@ text-align: center;
 
 .btn {
 	/*display: flex;*/
-  background-color: #4CAF50;
+  background-color: rgba(255,97,49,0.8);
   color: white;
   padding:5px 5px 5px 0px;
+  margin-top: 10px;
   margin-left:auto;
   margin-right: auto;
   border: none;
