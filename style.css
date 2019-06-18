@@ -1,163 +1,89 @@
 body{
     margin:auto 0;
 
-    background-color: rgba(189,195,199,1);
+   background-color: #8A392A;
   /* background: url(marsrover.jpg). no-repeat center center fixed; 
  size: cover;*/
-  font-family: 'Fira Sans', sans-serif;
+  
     }
 
 /**/
 
-
-
-
-
-
 /*
 Navigation bar*/
 
-.navbar{
- /* Old browsers */
- display: flex;
-/*justify-content: space-between;*/
-padding:0px 0px 0px 0px;
-/*background-color: #8A392A;*/
-box-shadow: 2px 2px 15px 4px grey;
-/*border-bottom: 2px solid #1A0402;*/
-
-}
-
-.main-nav .btn {
-
-border-radius: 6px;
-background-color:rgba(189,195,199,0.8);
-color: #8A392A;
-padding: 2px;
-margin: 0px;
-width: 70px;
-font-size: 1em
+.Navbar {
+display: flex;
+background-color: #8A392A;
+padding: 16px;
 font-family: 'Fira Sans', sans-serif;
-}
-
-/*items within .navbar container*/
-.main-nav{
-align-items: center;
-padding-left: 0px;
-display:flex;
-/*justify-content: flex-start;*/
-margin:0; /*gets rid of white space around the items*/
-/*flex-direction:row;*/
-  /*This aligns items to the end line on main-axis */
-/*justify-content: center;*/
-/*padding:0px 20px 0px 20px;*/
-}
-.main-nav2{
-align-items: center;
-display:flex;
-margin-left:auto; /*gets rid of white space around the items*/
-
-}
-
-
-.main-nav > li {
-/*justify-content: flex-start;*/
-margin:0;
-padding:0px 20px 0px 20px;
-list-style: none;
-font-family: 'Fira Sans', sans-serif;
-}
-
-
-
-
-
-
-
-.main-nav li a{
 color: white;
-text-decoration: none;
-font-size:1em;
-text-shadow: 1px black;
-padding:0px 20px 0px 20px;
-font-family: 'Fira Sans', sans-serif;
+border-bottom: 2px solid black;
+
+
 }
 
-.main-nav2 > li {
-justify-content: flex-end;
-margin:0;
-padding:0px 20px 0px 20px;
-list-style: none;
-font-family: 'Fira Sans', sans-serif;
-}
-.main-nav2 li a{
-color: white;
-text-decoration: none;
-font-size:1em;
-text-shadow: 1px black;
-padding:0px 20px 0px 20px;
-font-family: 'Fira Sans', sans-serif;
+.Navbar__Items {
+  display:flex;
+  align-items: center;
 }
 
+.Navbar__Link a {
 
-.airmarslogo{
-
-/*display: inline-block;*/
-padding:0px 0px 0px 0px;
-margin-left: 0px;
-margin-bottom: 0px;
+    text-decoration: none;
+    color: white
 }
 
+.Navbar__Link .btn {
 
+    text-decoration: none;
+    background-color: rgba(189,195,199,0.8);
+    width: 40px;
+    color: #DA5A38;
+}
 
-.sticky {
+.Navbar__Link {
+  padding-right: 20px;
 
-    position: fixed;
-    top:0;
-    width: 100%
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
 }
 
 
 
-@media all and (max-width: 600px) {    
-    .main-nav {    
-        flex-wrap: wrap; 
-        flex-direction: column;
-        }    
-    .main-nav > li {    flex-basis: 50%;  
-
-    }
-
-}
-
-@media all and (max-width: 400px) {  
-    .main-nav {    
-        flex-wrap: wrap; 
-        flex-direction: column;
-        }    
-    .main-nav > li {    
-        flex-basis: 100%; 
-
-    }
-
-    }
-
-/*@media only screen and (max-width: 800px){
-look up media queries on css tricks - used for display issues eg text on page wehn reducing screen sizes, 
-in this example we reduce the font size and padding as it gets smaller to fit on page
-.main-nav{
-   font-size: 0.5em; 
-    padding:0;
-}*/
-
-/*}*/
 
 
-/*.push{
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .Navbar__Items {
+    display:none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+  .Navbar__ToggleShow {
     display: flex;
-justify-content: space-between;*/
-   /* margin-left: auto; */
-    /*pushes items to the far right of the nav*/
+  }
+  .Navbar__Link-toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+}
+}
+
 
 
 
@@ -174,7 +100,7 @@ height:70vh;
    }
   
 /*viewport height - will always be 50% of the view area*/
-
+/*
 @media all and (max-width: 600px) {    
     .main-nav{
 flex-direction: column;
@@ -191,13 +117,13 @@ flex-direction: column;
      .main-nav{
 flex-direction: column;
         flex-basis: 50%;
-    }
+    }*/
 
 
-    .container2 {    
+    /*.container2 {    
         
         flex-basis: 50% 
-        }    
+        }   */ 
     }
 
 .booking{
@@ -266,24 +192,51 @@ z-index: 10;
 box-shadow: 1px 1px grey;
 
 }
+
+.grid-design{
+
+    background-color: #2E404E;
+    padding-bottom: 100px;
+    border-bottom-left-radius: 100%;
+
+     border-bottom-right-radius: 100%;
+}
 footer{
 display: flex;
     background-color: #8A392A;
-    z-index: 10
     width: 100%;
+
+
 }
 
 footer li{
-display: flex;
-    text-align: left;
+/*display: flex;*/
+
    list-style: none;
    font-size: 14px;
 
 }
 
+.footer-list{
+
+    display: flex;
+}
+
 p{ 
 align-content: center;
 font-size: 14px; }
+
+@media only screen and (max-width: 768px) {
+
+    footer, .footer-list{
+
+
+        flex-direction:column;
+    }
+
+
+
+}
 
  /*.floatleft {
         float: center;

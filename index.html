@@ -13,35 +13,45 @@
  <!--  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b189f585cc.js"></script>
 </head>
 
 
 <body>
 
-  <!-- ******nav bar***** -->
-	<nav class="navbar sticky">
-<!-- <div class="marsimage"> -->
+<!--   navbar    -->
 
-<!--  <img src="airmars.png" class="airmarslogo" height="29"> -->
-
-<!-- </div> -->
-  	<ul class="main-nav" >
-  		<!-- <li><img class="logo"src="projectm.png" height="150px" width="150px"></li> -->
+   <div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-brand">
+    <img src="airmars.png">
+    </div>
+    <div class="Navbar__Link Navbar__Link-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  <nav class="Navbar__Items">
     
-		  <li><img src="airmars.png" class="airmarslogo" height="29"> </li>
-  		<li><a href="">Book</a></li>
-      <li><a href="">My Booking</a></li>
-      
-      <li> <input type="Check In" value="Check In" class="btn"></li>
-  	</ul>
-    <ul class="main-nav2"> 
-      <li><a href="">Register</a></li>
-      <li><a href="">Help</a></li>
-      <li><a href="">About</a></li>
-      </ul>
+
+    <div class="Navbar__Link"><a href="">Book</a>
+    </div>
+    <div class="Navbar__Link">
+     <a href="">My Booking</a>
+    </div>
+    <div class="Navbar__Link">
+      <a href="">Register</a>
+    </div>
   </nav>
+  <nav class="Navbar__Items Navbar__Items--right">
+    <div class="Navbar__Link">
+     <!--  <input class="btn" type="button" name="button"> -->
+    </div>
+    <div class="Navbar__Link">
+      Link
+    </div>
+  </nav>
+</div>
 
 
+<script src="navbar.js"></script>
 
 
   <div class="container2 red">   
@@ -70,15 +80,15 @@
          
           <div class="col-50">
             
-           <div class="destination"></dir> <label for="fname"><i class="fa fa-user"></i> </label>
+           <div class="destination"></dir> <label for="fname"><!-- <i class="fa fa-user"> --></i> </label>
             <input type="text" id="fname" name="firstname" placeholder="From: e.g.London"><hr>
-            <label for="email"><i class="fa fa-envelope"></i></label>
+            <label for="email"><!-- <i class="fa fa-envelope"></i> --></label>
             <input type="text" id="email" name="email" placeholder="To: Mars Sector 1">
           </div>
          <div class="depart">
             <label for="adress"><i class="fa fa-address-card-o">
               <input type="text" id="fname" name="firstname" placeholder="Departing"><hr>
-            <label for="email"><i class="fa fa-envelope"></i></label>
+            <label for="email"><!-- <i class="fa fa-envelope"> --></i></label>
             <input type="text" id="email" name="email" placeholder="Returning"></div> 
             <label for="adress"><i class="fa fa-address-card-o">
                </div> 
@@ -127,10 +137,23 @@
   
   	
   </div>
+
+  <div class="grid-design">
+  </div>
   
   <footer class="zone yellow">
+<div class="footer-list">
+    <ul><h6>About Air Mars</h6>
+      <li>About</li>
+      <li>Privacy Policy</li>
+      <li>Terms & Conditions</li>
+      <li>Cookie Policy</li>
+      <li>Disclaimer</li>
 
-    <ul><h6>About Air Mars</h6><hr>
+
+   </ul>
+
+     <ul><h6>Contact Us</h6>
       <li>About</li>
       <li>Privacy Policy</li>
       <li>Terms & Conditions</li>
@@ -140,7 +163,7 @@
 
     </ul>
 
-     <ul><h6>Contact Us</h6><hr>
+     <ul><h6>Members</h6>
       <li>About</li>
       <li>Privacy Policy</li>
       <li>Terms & Conditions</li>
@@ -149,22 +172,7 @@
 
 
     </ul>
-
-
-
-
-    </ul>
-
-     <ul><h6>Members</h6><hr>
-      <li>About</li>
-      <li>Privacy Policy</li>
-      <li>Terms & Conditions</li>
-      <li>Cookie Policy</li>
-      <li>Disclaimer</li>
-
-
-    </ul>
-
+</div>
 
   </footer>
   
