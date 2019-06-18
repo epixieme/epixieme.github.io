@@ -59,7 +59,7 @@ border-bottom: 2px solid black;
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen (min-width: 220px) and (max-width: 480px) {
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
@@ -237,6 +237,8 @@ font-size: 14px; }
 
 
 }
+
+
 
  /*.floatleft {
         float: center;
