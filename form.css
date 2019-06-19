@@ -1,31 +1,35 @@
+.form-placer{
+
+
+position: absolute;
+top:350px;
+left:107em;
+
+}
+@media only screen and (max-width: 768px){
+
+.form-placer{
+
+
+position: absolute;
+top:250px;
+left:50px;
+
+}
+
+
+
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+
 /*  margin-right: 30px;*/
-
-
 }
 
-.col-25 {
-  -ms-flex: 25%;  IE10 
-  flex: 25%;
-  background-color: rgba(189,195,199,1);
-}
 
-.col-50 {
-  -ms-flex: 50%;  /*IE10 */
-  flex: 50%;
-
-
-}
-
-.col-75 {
-  -ms-flex: 75%;
-  flex:75%;
-
-}
 
 h3{
 
@@ -36,14 +40,8 @@ h3{
 .col-75 {
  /* padding: 0 16px;*/
   }
-.book{
-/*display: flex;*/
-list-style: none;
- display: flex;
 
-margin-top: 20px;
-margin-left: 200px;
-}
+
 
 .container {
 display: flex;
@@ -51,7 +49,7 @@ display: flex;
   padding: 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 0px 10px;
-  margin-top: 0px;
+  /*margin-top: 0px;*/
   margin-left: auto;
   width: 80%;
 
@@ -63,9 +61,7 @@ display: flex;
 
 
 .formheaders{
-
 	display: flex;
-
 	padding: 5px;
 	margin-bottom:-3px;
 	height: 13%;
@@ -74,16 +70,10 @@ display: flex;
 
 .formheaders li{
 list-style: none;
-	justify-content: center;
-
-	align-items: center;
+	
 	 background-color: rgba(189,195,199,1);
 	 width:40px;
 	 padding:10px;
-	/* padding left: 15px;*/
-	/*padding-bottom: 10px;*/
-    /* margin-left: 15px;*/
-
 	 margin-bottom: 0px;
 	 border-radius: 10px 0px;
 	 font-size: 0.9em;
@@ -114,13 +104,11 @@ background-color: rgba(189,195,199,0.8);
 
 input[type=text] {
 display: flex;
-  width: 50%;
-  alignment-baseline: central;
-  margin-bottom: 20px;
+  width: 50%;  
+margin-bottom: 20px;
    padding-left: 20px;
   border: 0px solid #ccc;
   border-radius: 10px;
-  justify-content: center;
   background-color: rgba(189,195,199,0.8);
 
  /* margin-left: 20%%;*/
@@ -156,12 +144,12 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.icon-container {
+/*.icon-container {*/
 /*  margin-bottom: 20px;*/
-  padding: 0px 0px;
+ /* padding: 0px 0px;
   font-size: 20px;
 }
-
+*/
 .btn {
 	/*display: flex;*/
   background-color: rgba(255,97,49,0.8);
