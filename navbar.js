@@ -7,6 +7,6 @@ const toggleBurgerMenu=()=> {
 
 }
 
-const callToggleBurgerMenu= document.querySelector('.Navbar__Link-toggle').addEventListener('click', callToggleBurgerMenu);
+const callToggleBurgerMenu= document.querySelector('.Navbar__Link-toggle').addEventListener('click', toggleBurgerMenu);
 // document.querySelector('.Navbar__Link-toggle')
 //   .addEventListener('click', classToggle); // on click it calls and runs the classtoggle function when the screen is a mobile
